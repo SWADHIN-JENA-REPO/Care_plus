@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlus Hospital - Caring for You, Every Step of the Way</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">+</span>
+                <div class="logo-text">
+                    <span class="brand-name">CarePlus Hospital</span>
+                    <span class="brand-tagline">Healthcare with Care & Compassion</span>
+                </div>
+            </div>
+            <!-- Mobile Navigation Hamburger Button -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Navigation Links -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#appointment" class="nav-btn">Appointment</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Welcome to CarePlus Hospital</span>
+                <h1 class="hero-title">CarePlus Hospital</h1>
+                <p class="hero-tagline">“Caring for You, Every Step of the Way”</p>
+                <p class="hero-description">
+                    CarePlus Hospital provides accessible and reliable healthcare services through experienced doctors and specialized departments. We are dedicated to delivering patient-centric medical treatment with kindness, precision, and modern facilities.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+                    <a href="#departments" class="btn btn-secondary">Explore Departments</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img
+                    src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=700&q=80"
+                    alt="CarePlus Hospital Building and Medical Care"
+                    class="hero-img"
+                >
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About CarePlus Hospital</h2>
+                <p class="section-subtitle">Dedicated to community well-being with quality, accessible, and ethical medical care.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-card">
+                    <h3>Who We Are</h3>
+                    <p>
+                        CarePlus Hospital is a comprehensive healthcare facility dedicated to offering high-standard diagnosis, treatment, and preventive care. Established with a vision to serve families with empathy, we bring together leading specialists, well-trained nursing staff, and patient-first medical practices.
+                    </p>
+                </div>
+                <div class="about-text-card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To provide compassionate, accessible, and high-quality medical healthcare to every individual in our community through evidence-based treatments and experienced doctors.
+                    </p>
+                </div>
+                <div class="about-text-card">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be a trusted and patient-preferred healthcare institution recognized for clinical excellence, ethical medical practice, patient satisfaction, and community care.
+                    </p>
+                </div>
+            </div>
+            <!-- Key Pillars -->
+            <div class="highlights-grid">
+                <div class="highlight-box">
+                    <div class="highlight-icon">🩺</div>
+                    <h4>Patient-Focused Healthcare</h4>
+                    <p>Personalized medical attention, transparent communication, and patient comfort are at the center of all our services.</p>
+                </div>
+                <div class="highlight-box">
+                    <div class="highlight-icon">👨‍⚕️</div>
+                    <h4>Experienced Doctors</h4>
+                    <p>Our team consists of qualified specialists and compassionate surgeons with extensive clinical experience across disciplines.</p>
+                </div>
+                <div class="highlight-box">
+                    <div class="highlight-icon">🏥</div>
+                    <h4>Modern Healthcare Facilities</h4>
+                    <p>Equipped with clean wards, hygienic diagnostic centers, and reliable emergency support for all medical situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DEPARTMENTS SECTION (10 DEPARTMENTS) -->
+    <section class="departments-section" id="departments">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Medical Departments</h2>
+                <p class="section-subtitle">Comprehensive medical specialties designed to take care of you and your loved ones.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="department-grid">
+                <!-- 1. General Medicine -->
+                <div class="department-card">
+                    <div class="dept-badge">01</div>
+                    <h3>General Medicine</h3>
+                    <p>Comprehensive primary care, treatment for viral infections, chronic lifestyle diseases, and regular medical checkups.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Ananya Das
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('General Medicine')">Book Appointment</button>
+                </div>
+                <!-- 2. Cardiology -->
+                <div class="department-card">
+                    <div class="dept-badge">02</div>
+                    <h3>Cardiology</h3>
+                    <p>Advanced heart care covering hypertension, coronary artery disorders, cardiac assessments, and preventive cardiology.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Rajesh Mishra
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('Cardiology')">Book Appointment</button>
+                </div>
+                <!-- 3. Neurology -->
+                <div class="department-card">
+                    <div class="dept-badge">03</div>
+                    <h3>Neurology</h3>
+                    <p>Expert diagnosis and therapy for brain, spinal cord, migraine headaches, nerve conditions, and neurological disorders.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Suman Patnaik
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('Neurology')">Book Appointment</button>
+                </div>
+                <!-- 4. Orthopedics -->
+                <div class="department-card">
+                    <div class="dept-badge">04</div>
+                    <h3>Orthopedics</h3>
+                    <p>Specialized bone and joint care, arthritis treatment, fracture rehabilitation, and musculoskeletal pain management.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Abhishek Mohanty
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('Orthopedics')">Book Appointment</button>
+                </div>
+                <!-- 5. Dermatology -->
+                <div class="department-card">
+                    <div class="dept-badge">05</div>
+                    <h3>Dermatology</h3>
+                    <p>Effective diagnosis and therapeutic treatments for skin allergies, acne, hair fall, fungal infections, and eczema.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Priya Rout
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('Dermatology')">Book Appointment</button>
+                </div>
+                <!-- 6. Pediatrics -->
+                <div class="department-card">
+                    <div class="dept-badge">06</div>
+                    <h3>Pediatrics</h3>
+                    <p>Compassionate healthcare for infants, toddlers, and adolescents including routine growth checks and childhood immunizations.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Rakesh Behera
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('Pediatrics')">Book Appointment</button>
+                </div>
+                <!-- 7. Gynecology -->
+                <div class="department-card">
+                    <div class="dept-badge">07</div>
+                    <h3>Gynecology</h3>
+                    <p>Dedicated women's health services encompassing prenatal care, postnatal support, and routine gynecological wellness.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Sneha Nayak
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('Gynecology')">Book Appointment</button>
+                </div>
+                <!-- 8. ENT -->
+                <div class="department-card">
+                    <div class="dept-badge">08</div>
+                    <h3>ENT</h3>
+                    <p>Complete clinical management of ear infections, nasal blockage, chronic sinusitis, throat pain, and hearing concerns.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Amit Pradhan
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('ENT')">Book Appointment</button>
+                </div>
+                <!-- 9. Ophthalmology -->
+                <div class="department-card">
+                    <div class="dept-badge">09</div>
+                    <h3>Ophthalmology</h3>
+                    <p>Professional vision screening, eye strain relief, refractive error tests, cataract evaluations, and eye health exams.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Pooja Sahu
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('Ophthalmology')">Book Appointment</button>
+                </div>
+                <!-- 10. Diabetes & Endocrinology -->
+                <div class="department-card">
+                    <div class="dept-badge">10</div>
+                    <h3>Diabetes & Endocrinology</h3>
+                    <p>Specialized hormonal care, comprehensive Type 1 & Type 2 diabetes management, and thyroid disorder treatments.</p>
+                    <div class="dept-doctor-info">
+                        <strong>Lead Specialist:</strong> Dr. Debasish Jena
+                    </div>
+                    <button class="btn btn-outline" onclick="bookDepartment('Diabetes & Endocrinology')">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCTORS SECTION (10 DOCTORS) -->
+    <section class="doctors-section" id="doctors">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Experienced Doctors</h2>
+                <p class="section-subtitle">Dedicated medical professionals committed to providing ethical and reliable care.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="doctor-grid">
+                <!-- Doctor 1 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Ananya-das.png" alt="Dr. Ananya Das" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Ananya Das</h3>
+                        <span class="doctor-dept">General Medicine</span>
+                        <p class="doctor-spec">MD - General Medicine</p>
+                        <p class="doctor-exp">Experience: <strong>12+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('General Medicine', 'Dr. Ananya Das')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Rajesh-Mishra.png" alt="Dr. Rajesh Mishra" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Rajesh Mishra</h3>
+                        <span class="doctor-dept">Cardiology</span>
+                        <p class="doctor-spec">MD, DM - Cardiology</p>
+                        <p class="doctor-exp">Experience: <strong>15+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('Cardiology', 'Dr. Rajesh Mishra')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Suman-Patnaik.png" alt="Dr. Suman Patnaik" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Suman Patnaik</h3>
+                        <span class="doctor-dept">Neurology</span>
+                        <p class="doctor-spec">MD, DM - Neurology</p>
+                        <p class="doctor-exp">Experience: <strong>10+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('Neurology', 'Dr. Suman Patnaik')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 4 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Abhishek-Mohanty.png" alt="Dr. Abhishek Mohanty" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Abhishek Mohanty</h3>
+                        <span class="doctor-dept">Orthopedics</span>
+                        <p class="doctor-spec">MS - Orthopedics</p>
+                        <p class="doctor-exp">Experience: <strong>14+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('Orthopedics', 'Dr. Abhishek Mohanty')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 5 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Priya-Rout.png" alt="Dr. Priya Rout" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Priya Rout</h3>
+                        <span class="doctor-dept">Dermatology</span>
+                        <p class="doctor-spec">MD - Dermatology</p>
+                        <p class="doctor-exp">Experience: <strong>8+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('Dermatology', 'Dr. Priya Rout')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 6 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Rakesh Behera.png" alt="Dr. Rakesh Behera" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Rakesh Behera</h3>
+                        <span class="doctor-dept">Pediatrics</span>
+                        <p class="doctor-spec">MD - Pediatrics</p>
+                        <p class="doctor-exp">Experience: <strong>11+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('Pediatrics', 'Dr. Rakesh Behera')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 7 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Sneha Nayak.png" alt="Dr. Sneha Nayak" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Sneha Nayak</h3>
+                        <span class="doctor-dept">Gynecology</span>
+                        <p class="doctor-spec">MS - Obstetrics & Gynecology</p>
+                        <p class="doctor-exp">Experience: <strong>13+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('Gynecology', 'Dr. Sneha Nayak')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 8 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Amit Pradhan.png" alt="Dr. Amit Pradhan" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Amit Pradhan</h3>
+                        <span class="doctor-dept">ENT</span>
+                        <p class="doctor-spec">MS - ENT (Otolaryngology)</p>
+                        <p class="doctor-exp">Experience: <strong>9+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('ENT', 'Dr. Amit Pradhan')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 9 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Pooja Sahu.png" alt="Dr. Pooja Sahu" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Pooja Sahu</h3>
+                        <span class="doctor-dept">Ophthalmology</span>
+                        <p class="doctor-spec">MS - Ophthalmology</p>
+                        <p class="doctor-exp">Experience: <strong>7+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('Ophthalmology', 'Dr. Pooja Sahu')">Book Appointment</button>
+                    </div>
+                </div>
+                <!-- Doctor 10 -->
+                <div class="doctor-card">
+                    <div class="doctor-img-wrap">
+                        <img src="./images/Debasish Jena.png" alt="Dr. Debasish Jena" class="doctor-img">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Debasish Jena</h3>
+                        <span class="doctor-dept">Diabetes & Endocrinology</span>
+                        <p class="doctor-spec">MD, DM - Endocrinology</p>
+                        <p class="doctor-exp">Experience: <strong>16+ Years</strong></p>
+                        <button class="btn btn-sm btn-primary" onclick="bookDoctor('Diabetes & Endocrinology', 'Dr. Debasish Jena')">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- APPOINTMENT BOOKING SECTION -->
+    <section class="appointment-section" id="appointment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book an Appointment</h2>
+                <p class="section-subtitle">Fill in your details below to schedule a consultation with our department specialist.</p>
+                <div class="divider"></div>
+            </div>
+            <!-- Booking Form Card -->
+            <div class="form-container">
+                <!-- Success Notification Box -->
+                <div class="alert alert-success" id="successMessage" style="display: none;">
+                    <div class="alert-icon">✓</div>
+                    <div>
+                        <strong>Appointment Booked Successfully!</strong>
+                        <p id="successDetails">Your appointment has been registered and added to the dashboard below.</p>
+                    </div>
+                </div>
+                <form id="appointmentForm" class="appointment-form" novalidate>
+                    <div class="form-grid">
+                        <!-- Patient Name -->
+                        <div class="form-group">
+                            <label for="patientName">Patient Name <span class="required">*</span></label>
+                            <input type="text" id="patientName" placeholder="Enter full name" required>
+                            <small class="error-text" id="patientNameError"></small>
+                        </div>
+                        <!-- Age -->
+                        <div class="form-group">
+                            <label for="patientAge">Age <span class="required">*</span></label>
+                            <input type="number" id="patientAge" min="1" max="120" placeholder="e.g. 25" required>
+                            <small class="error-text" id="patientAgeError"></small>
+                        </div>
+                        <!-- Gender -->
+                        <div class="form-group">
+                            <label for="patientGender">Gender <span class="required">*</span></label>
+                            <select id="patientGender" required>
+                                <option value="">-- Select Gender --</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <small class="error-text" id="patientGenderError"></small>
+                        </div>
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label for="patientPhone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="patientPhone" placeholder="10-digit mobile number" required>
+                            <small class="error-text" id="patientPhoneError"></small>
+                        </div>
+                        <!-- Email Address -->
+                        <div class="form-group">
+                            <label for="patientEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="patientEmail" placeholder="e.g. patient@example.com" required>
+                            <small class="error-text" id="patientEmailError"></small>
+                        </div>
+                        <!-- Select Department -->
+                        <div class="form-group">
+                            <label for="departmentSelect">Select Department <span class="required">*</span></label>
+                            <select id="departmentSelect" required>
+                                <option value="">-- Choose Department --</option>
+                                <option value="General Medicine">General Medicine</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Orthopedics">Orthopedics</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Pediatrics">Pediatrics</option>
+                                <option value="Gynecology">Gynecology</option>
+                                <option value="ENT">ENT</option>
+                                <option value="Ophthalmology">Ophthalmology</option>
+                                <option value="Diabetes & Endocrinology">Diabetes & Endocrinology</option>
+                            </select>
+                            <small class="error-text" id="departmentError"></small>
+                        </div>
+                        <!-- Select Doctor (Connected to Department) -->
+                        <div class="form-group">
+                            <label for="doctorSelect">Select Doctor <span class="required">*</span></label>
+                            <select id="doctorSelect" required>
+                                <option value="">-- Select Department First --</option>
+                            </select>
+                            <small class="error-text" id="doctorError"></small>
+                        </div>
+                        <!-- Appointment Date -->
+                        <div class="form-group">
+                            <label for="appointmentDate">Appointment Date <span class="required">*</span></label>
+                            <input type="date" id="appointmentDate" required>
+                            <small class="error-text" id="appointmentDateError"></small>
+                        </div>
+                        <!-- Appointment Time -->
+                        <div class="form-group">
+                            <label for="appointmentTime">Appointment Time <span class="required">*</span></label>
+                            <select id="appointmentTime" required>
+                                <option value="">-- Choose Time Slot --</option>
+                                <option value="09:00 AM">09:00 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="02:00 PM">02:00 PM</option>
+                                <option value="03:00 PM">03:00 PM</option>
+                                <option value="04:00 PM">04:00 PM</option>
+                                <option value="05:00 PM">05:00 PM</option>
+                            </select>
+                            <small class="error-text" id="appointmentTimeError"></small>
+                        </div>
+                        <!-- Reason for Visit -->
+                        <div class="form-group full-width">
+                            <label for="visitReason">Reason for Visit <span class="required">*</span></label>
+                            <textarea id="visitReason" rows="3" placeholder="Briefly describe your symptoms or reason for consultation (e.g. Regular health checkup, fever, chest discomfort)" required></textarea>
+                            <small class="error-text" id="visitReasonError"></small>
+                        </div>
+                    </div>
+                    <div class="form-submit-row">
+                        <button type="submit" id="submitBtn" class="btn btn-primary btn-large">
+                            Submit Appointment
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- APPOINTMENT DASHBOARD -->
+    <section class="dashboard-section" id="dashboard">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Appointment Dashboard</h2>
+                <p class="section-subtitle">Real-time appointments stored securely in your browser's local storage.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="table-responsive">
+                <table class="dashboard-table" id="appointmentTable">
+                    <thead>
+                        <tr>
+                            <th style="width: 5%;">No.</th>
+                            <th style="width: 17%;">Patient Name</th>
+                            <th style="width: 15%;">Department</th>
+                            <th style="width: 15%;">Doctor</th>
+                            <th style="width: 11%;">Date</th>
+                            <th style="width: 10%;">Time</th>
+                            <th style="width: 13%;">Reason</th>
+                            <th style="width: 14%;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appointmentTableBody">
+                        <!-- Dynamically populated from localStorage by script.js -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-footer-info">
+                <p>💡 <em>Note: Appointments are permanently preserved in browser localStorage. You can only update or delete your own appointments.</em></p>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch with CarePlus Hospital for queries, appointments, and assistance.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-grid">
+                <!-- Hospital Info Card -->
+                <div class="contact-info-card">
+                    <h3>CarePlus Hospital</h3>
+                    <p class="contact-desc">Serving the community with dedicated healthcare professionals and modern treatment facilities.</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Address:</strong>
+                            <p>CarePlus Hospital near ravi talkies pin no. 796002 , Bhubaneswar, Odisha, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone:</strong>
+                            <p>+91 81442 93099</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email:</strong>
+                            <p><a href="mailto:careplus@example.com">careplus@example.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <strong>Opening Hours:</strong>
+                            <p>Monday – Saturday: 9:00 AM – 6:00 PM</p>
+                            <p class="highlight-text">Sunday – Emergency Services</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Emergency / Quick Help Box -->
+                <div class="contact-help-card">
+                    <h3>Need Immediate Assistance?</h3>
+                    <p>For urgent emergencies, our round-the-clock emergency desk and ambulance services are always on standby.</p>
+                    <div class="emergency-badge">
+                        <span>24/7 Helpline: <strong>102 / 108</strong></span>
+                    </div>
+                    <div class="hospital-quote">
+                        <p>“Health is the greatest wealth. At CarePlus, our primary goal is your speedy recovery and holistic well-being.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <p class="footer-title">CarePlus Hospital</p>
+                <p class="footer-copy">© 2026 CarePlus Hospital. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <span>|</span>
+                <a href="#about">About</a>
+                <span>|</span>
+                <a href="#departments">Departments</a>
+                <span>|</span>
+                <a href="#doctors">Doctors</a>
+                <span>|</span>
+                <a href="#appointment">Appointment</a>
+                <span>|</span>
+                <a href="#dashboard">Dashboard</a>
+                <span>|</span>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPT REFERENCE -->
+    <script src="script.js"></script>
+</body>
+</html>
